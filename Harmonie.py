@@ -29,8 +29,6 @@ c1=grbs.message(5).values
 c2=grbs.message(6).values
 c3=grbs.message(7).values
 t2=grbs.message(9).values-273.15
-precip=grbs.message(10).values
-snow=grbs.message(12).values
 mslp=grbs.message(1).values/100
 visibility = grbs.message(15).values
 dewpoint = grbs.message(26).values
@@ -41,8 +39,11 @@ mintemp = grbs.message(25).values-273.15
 #3d-variables
 Filename = 'NEA_2023080406.042-3d-variables'
 grbs = pgr.open(Filename)
-
 temp850 = grbs.message(57).values-273.15
+
+
+
+
 
 
 #Adjusting wind angles
